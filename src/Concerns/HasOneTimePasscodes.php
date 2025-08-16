@@ -50,7 +50,7 @@ class HasOneTimePasscodes
         $otpExpiresInSeconds = $otpExpiresInSeconds ?? config('laravel-one-passcode.otp_ttl_seconds');
 
         $oneTimePasscode = new OneTimePasscode;
-        $oneTimePasscode->token = "123456";
+        $oneTimePasscode->token = '123456';
         $oneTimePasscode->purpose = $purpose;
         $oneTimePasscode->expires_at = now()->addSeconds($otpExpiresInSeconds);
         $oneTimePasscode->save();
@@ -63,9 +63,6 @@ class HasOneTimePasscodes
     /**
      * Validate a given one-time passcode token.
      *
-     * @param string $token
-     * @param string|null $purpose
-     * @return bool
      * @throws Exception
      */
     public function validateOneTimePasscode(string $token, ?string $purpose = null): bool
@@ -85,7 +82,7 @@ class HasOneTimePasscodes
             ->first();
 
         if (! $oneTimePasscode) {
-            throw new Exception("Unable to validate one-time passcode.");
+            throw new Exception('Unable to validate one-time passcode.');
         }
 
         RateLimiter::clear($rateKey);
