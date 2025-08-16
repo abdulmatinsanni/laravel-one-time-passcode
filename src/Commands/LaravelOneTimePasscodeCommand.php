@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace abdulmatinsanni\LaravelOneTimePasscode\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelOneTimePasscodeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-one-time-passcode';
 
     public $description = 'My command';
 
