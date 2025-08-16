@@ -51,7 +51,7 @@ class OneTimePasscode extends Model
      *
      * @return MorphTo<Model, $this>
      */
-    protected function verifiable(): MorphTo
+    public function verifiable(): MorphTo
     {
         return $this->morphTo();
     }
