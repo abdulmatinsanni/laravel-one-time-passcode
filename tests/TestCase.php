@@ -1,8 +1,8 @@
 <?php
 
-namespace abdulmatinsanni\LaravelOneTimePasscode\Tests;
+namespace AbdulmatinSanni\LaravelOneTimePasscode\Tests;
 
-use abdulmatinsanni\LaravelOneTimePasscode\LaravelOneTimePasscodeServiceProvider;
+use AbdulmatinSanni\LaravelOneTimePasscode\LaravelOneTimePasscodeServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'abdulmatinsanni\\LaravelOneTimePasscode\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'AbdulmatinSanni\\LaravelOneTimePasscode\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

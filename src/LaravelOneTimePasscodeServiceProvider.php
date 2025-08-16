@@ -1,8 +1,8 @@
 <?php
 
-namespace abdulmatinsanni\LaravelOneTimePasscode;
+namespace AbdulmatinSanni\LaravelOneTimePasscode;
 
-use abdulmatinsanni\LaravelOneTimePasscode\Commands\LaravelOneTimePasscodeCommand;
+use AbdulmatinSanni\LaravelOneTimePasscode\Commands\LaravelOneTimePasscodeCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

@@ -1,5 +1,5 @@
 <?php
 
-namespace abdulmatinsanni\LaravelOneTimePasscode;
+namespace AbdulmatinSanni\LaravelOneTimePasscode;
 
 class LaravelOneTimePasscode {}

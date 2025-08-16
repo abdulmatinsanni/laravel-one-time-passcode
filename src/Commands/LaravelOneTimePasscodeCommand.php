@@ -1,6 +1,6 @@
 <?php
 
-namespace abdulmatinsanni\LaravelOneTimePasscode\Commands;
+namespace AbdulmatinSanni\LaravelOneTimePasscode\Commands;
 
 use Illuminate\Console\Command;
 

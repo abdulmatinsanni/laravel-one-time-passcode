@@ -52,7 +52,7 @@ php artisan vendor:publish --tag="laravel-one-time-passcode-views"
 ## Usage
 
 ```php
-$laravelOneTimePasscode = new abdulmatinsanni\LaravelOneTimePasscode();
+$laravelOneTimePasscode = new AbdulmatinSanni\LaravelOneTimePasscode();
 echo $laravelOneTimePasscode->echoPhrase('Hello, abdulmatinsanni!');
 ```
 
