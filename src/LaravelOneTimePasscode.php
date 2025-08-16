@@ -15,8 +15,12 @@ class LaravelOneTimePasscode
     /**
      * @throws Exception
      */
-    public static function create(CanUseOneTimePasscodes $verifiable, ?string $purpose, ?int $otpExpiresInSeconds, ?int $length): OneTimePasscode
-    {
+    public static function create(
+        CanUseOneTimePasscodes $verifiable,
+        ?string $purpose,
+        ?int $otpExpiresInSeconds,
+        ?int $length = null
+    ): OneTimePasscode {
         $rateLimiterKey = "generate-one-time-passcode:{$verifiable->getMorphClass()}:{$verifiable->getKey()}";
 
         if (RateLimiter::tooManyAttempts($rateLimiterKey, $perMinute = 5)) {
