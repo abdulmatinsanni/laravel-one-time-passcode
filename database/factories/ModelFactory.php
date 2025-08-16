@@ -1,6 +1,6 @@
 <?php
 
-namespace abdulmatinsanni\LaravelOneTimePasscode\Database\Factories;
+namespace AbdulmatinSanni\LaravelOneTimePasscode\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

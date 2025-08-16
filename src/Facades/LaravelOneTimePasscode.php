@@ -1,16 +1,16 @@
 <?php
 
-namespace abdulmatinsanni\LaravelOneTimePasscode\Facades;
+namespace AbdulmatinSanni\LaravelOneTimePasscode\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \abdulmatinsanni\LaravelOneTimePasscode\LaravelOneTimePasscode
+ * @see \AbdulmatinSanni\LaravelOneTimePasscode\LaravelOneTimePasscode
  */
 class LaravelOneTimePasscode extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \abdulmatinsanni\LaravelOneTimePasscode\LaravelOneTimePasscode::class;
+        return \AbdulmatinSanni\LaravelOneTimePasscode\LaravelOneTimePasscode::class;
     }
 }

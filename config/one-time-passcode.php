@@ -1,6 +1,6 @@
 <?php
 
-// config for abdulmatinsanni/LaravelOneTimePasscode
+// config for AbdulmatinSanni/LaravelOneTimePasscode
 return [
 
 ];

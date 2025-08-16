@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "abdulmatinsanni\\LaravelOneTimePasscode\\": "src/",
-            "abdulmatinsanni\\LaravelOneTimePasscode\\Database\\Factories\\": "database/factories/"
+            "AbdulmatinSanni\\LaravelOneTimePasscode\\": "src/",
+            "AbdulmatinSanni\\LaravelOneTimePasscode\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "abdulmatinsanni\\LaravelOneTimePasscode\\Tests\\": "tests/",
+            "AbdulmatinSanni\\LaravelOneTimePasscode\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "abdulmatinsanni\\LaravelOneTimePasscode\\LaravelOneTimePasscodeServiceProvider"
+                "AbdulmatinSanni\\LaravelOneTimePasscode\\LaravelOneTimePasscodeServiceProvider"
             ],
             "aliases": {
-                "LaravelOneTimePasscode": "abdulmatinsanni\\LaravelOneTimePasscode\\Facades\\LaravelOneTimePasscode"
+                "LaravelOneTimePasscode": "AbdulmatinSanni\\LaravelOneTimePasscode\\Facades\\LaravelOneTimePasscode"
             }
         }
     },
