@@ -2,7 +2,7 @@
 
 namespace AbdulmatinSanni\LaravelOneTimePasscode;
 
-use AbdulmatinSanni\LaravelOneTimePasscode\Commands\LaravelOneTimePasscodeCommand;
+use AbdulmatinSanni\LaravelOneTimePasscode\Commands\CleanupExpiredOTPsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,7 +19,7 @@ class LaravelOneTimePasscodeServiceProvider extends PackageServiceProvider
             ->name('laravel-one-time-passcode')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_laravel_one_time_passcode_table')
-            ->hasCommand(LaravelOneTimePasscodeCommand::class);
+            ->hasMigration('create_laravel_one_time_passcodes_table')
+            ->hasCommands([CleanupExpiredOTPsCommand::class]);
     }
 }
